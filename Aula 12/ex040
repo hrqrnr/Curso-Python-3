@@ -1,0 +1,12 @@
+#média
+
+n1 = float(input('Primeira nota: \n'))
+n2 = float(input('Segunda nota: \n'))
+m = ((n1 + n2) / 2)
+
+if m < 5.0:
+    print('Média: {}. Aluno REPROVADO!'.format(m))
+elif m > 6.9:
+    print('Média: {}. Aluno APROVADO!'.format(m))
+else:
+    print('Média: {}. Aluno EM RECUPERAÇÃO!'.format(m))

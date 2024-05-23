@@ -1,0 +1,5 @@
+#conversor de moedas
+
+real = float(input('Quantos reais vc deseja converter pra dólar? R$ '))
+dólar = real / 5.16 #att em 10/05/24
+print('Resultado: US$ {:.2f}'.format(dólar))

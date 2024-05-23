@@ -1,0 +1,9 @@
+#preço da passagem: 50 centavos até 200km e 45 p/ mais longas
+
+dist = int(input('Distância da viagem: \n'))
+preço = 0
+if dist <= 200:
+    preço = (dist * 0.50)
+else:
+    preço = (dist * 0.45)
+print('Preço da passagem: R$ {:.2f}.'.format(preço))

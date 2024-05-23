@@ -1,0 +1,13 @@
+#seno, cosseno e tangente de um ângulo
+from math import radians, sin, cos, tan #pausa pra aulinha básica de matemática pra qm estudou em escola pública e era um macaco: radianos é uma unidade de medida relacionada a ângulos. fiquei um pouco cabrêro e com vontade de aprender/relembrar mais a fundo, mas creio q ñ disponho desse tempo, ent serei direto: oq cabe é saber q no caso dessa função, é necessário converter de graus para radianos, e isso tá no manual do py, conforme ministrado pelo Ilustríssiom Guanabara na aula em questão (no caso ele ensina como acessar isso dentro do site)
+
+ang = float(input("Digite um ângulo de uma circunferência (de 0º a 360º): \n"))
+
+seno = sin(radians(ang))
+coss = cos(radians(ang))
+tang = tan(radians(ang))
+#as funções são "chamadas de forma conjunta; ñ há problema nisso"
+
+print('Seno: {:.2f}'.format(seno))
+print('Cosseno {:.2f}.'.format(coss))
+print('Tangente de {:.2f}.'.format(tang))

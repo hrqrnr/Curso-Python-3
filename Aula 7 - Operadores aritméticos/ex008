@@ -1,0 +1,13 @@
+#lê em metros e converte pras dms medidas usualmente importantes
+
+n = int(input("Digite uma distância em metros: "))
+
+print('Quilômetros - kilômetros (km):', (n*1000))
+print('Hectômetros (hm):', (n*100))
+print('Decâmetros (dam):', (n*10))
+
+print('Metros (m):', n*1)
+
+print('Decímetros (dm):', (n/10))
+print('Centímetros (cm):', (n/100))
+print('Milímetros (mm):', (n/1000))

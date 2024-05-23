@@ -1,0 +1,5 @@
+#15% de aumento pra um funcionário
+
+salário = float(input("Salário inicial: \nR$ "))
+aumento = salário*15/100
+print('Salário c/ aumento: R$ {:.2f}'.format(salário+aumento))

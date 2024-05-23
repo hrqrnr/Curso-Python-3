@@ -1,0 +1,13 @@
+#lê algo pelo tc e mostre seu tipo primitivo, bem como todas as dms informações possíveis
+
+algo = input('Digite algo: ')
+print('Seu tipo primitivo é ', type(algo))
+print('Só tem espaços? ', algo.isspace())
+print('É um nº? ', algo.isnumeric())
+print('É alfabético? ', algo.isalpha())
+print('Alfanumérico? ', algo.isalnum())
+print('Minúsculo?', algo.islower())
+print('Maiúsculo?', algo.islower())
+print('Capitalizada (ambos)? ', algo.istitle())
+
+##### NÃO ESQUECER DE INSERIR OS PARÊNTESES NO FINAL DAS FUNÇÕES #####

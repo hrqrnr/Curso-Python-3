@@ -1,0 +1,15 @@
+#sorteia um nome dentro de uma lista
+
+from random import choice
+
+n1 = str(input('Primeiro: '))
+n2 = str(input('Segundo: '))
+n3 = str(input('Terceiro: '))
+n4 = str(input('Quarto: '))
+
+lista = [n1, n2, n3, n4]
+escolhido = choice(lista) #aq eu pensaria q o certo seria lista.choice, mas, aparentemente, quando trata-se de um módulo e ñ de uma função interna, usa-se dessa forma
+
+print('Aluno escolhido: {}'.format(escolhido))
+
+#simples assim

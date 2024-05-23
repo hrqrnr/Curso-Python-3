@@ -1,0 +1,25 @@
+######Matéria importante para todas as linguagens
+#Localiza, corta, identifica, enfim... lida com caracteres de forma específica e automática a partir de algum comandos
+#Bacana lembrar q a contagem em Python se inicia no caractere 0 (apesar q já está sedimentado na minha mente)
+#Mais usados: len, count, find, in (q é na vdd um operador, mas pode ser usado pra fzr análise - OLHA COMO O PY É VERSÁTIL!)
+#O .title() titulariza o caractere - no caso em questão, td caractere será transformado em maiúsculo dps de um espaço em branco, q é o parâmetro inserido entre parêntese
+#.strip() - extremamente usado! principalmente quando disponiblizado preenchimento de algum dado por pessoa leiga - remove os excessos em branco no início e fim dos caracteres
+
+
+#analisa de acordo com alguns critérios:
+
+
+nome = str(input('Digite seu nome: \n')).strip()
+#o strip desconsidera os espaços em branco inseridos antes e depois do nome
+
+print('Minúsculas: {}.'.format(nome.lower()))
+
+print('Maiúsculas: {}.'.format(nome.upper()))
+
+print('Nº de letras: {}.'.format(len(nome) - nome.count(' ')))
+#comprimento do nome sem considerar os espaços: len de nome menos nome.count(espaço, q é o parâmetro)
+
+nome = nome.split()
+#divide os caracteres com base no parâmetro, q no caso é o espaço
+print('Nº de letras do 1º nome: {}'.format(len(nome[0])))
+#o parâmetro 0 remete à primeira cadeia de caractere dividida

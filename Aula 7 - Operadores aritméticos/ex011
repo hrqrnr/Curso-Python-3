@@ -1,0 +1,8 @@
+#calcula a área e a quantidade de tinta para pintar uma parede (1 litro pra cada 2m²)
+
+larg = float(input('Largura: '))
+alt = float(input('Altura: '))
+área = larg*alt
+print('Resultado:', larg, 'x', alt, '=', área)
+tinta = área/2
+print('Quantidade de tinta necessária: {}l'.format(tinta))

@@ -1,0 +1,6 @@
+#lê um nº, mostra o dobro, triplo e raiza quad.
+
+n = int(input('Digite um nº: '))
+print('Dobro = ', n*2)
+print('Triplo = ', n*3)
+print('Raiz = ', n**(1/2))

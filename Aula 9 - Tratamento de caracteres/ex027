@@ -1,0 +1,9 @@
+#mostre o primeiro e último nome
+
+nome = str(input('Nome: ')).strip().split()
+#divide a str c/ base em um parâmetro - como nenhum foi passado, é lido como espaço
+
+print('Primeiro = {}'.format(nome[0]))
+#está "splitado", portanto é só indicar
+print('Último = {}'.format(nome[-1]))
+#esse é bem interessante e autoexplicativo

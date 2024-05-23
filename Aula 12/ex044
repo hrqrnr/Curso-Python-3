@@ -1,0 +1,43 @@
+#valor de um produto c/ base nas condições de pagamento
+
+valor = float(input('Qual o preço do produto? \n'))
+
+print('Selecione uma forma de pagamento: ')
+
+print('''
+1 - À vista no dinheiro
+2 - À vista no cartão
+3 - Em 2x no cartão
+4 - Em 3x ou mais no cartão''')
+forma = int(input(' \n'))
+
+print('')
+
+if forma == 1:  #10% de desconto
+    print('Você selecionou à vista no dinheiro.')
+    desconto = (valor * (10/100))
+    print('Valor: R$ {:.2f}.'.format(
+        valor - desconto)
+    )
+elif forma == 2:  #5% de desconto
+    print('Você selecionou à vista no cartão.')
+    desconto = (valor * (5 / 100))
+    print('Valor: R$ {:.2f}.'.format(
+        valor - desconto)
+    )
+elif forma == 3:  #preço normal
+    print('Você selecionou em 2x no cartão.')
+    print('Valor: 2x de R${:.2f}.'.format((valor / 2))
+          )
+
+elif forma == 4:  #20% de juros
+    print('Você selecionou em 3x ou mais no cartão.')
+    desconto = (valor * (20 / 100))
+    parcelas = int(input('Em quantas vezes você deseja parcelar? \n'))
+    if parcelas < 3:
+        print('A quantidade mínima de parcelas é de 3x no cartão.')
+    else:
+        print('Valor: {}x de R$ {:.2f}.'.format(
+            parcelas, (valor + (desconto)) / parcelas))
+else:
+    print('Por favor, selecione uma alternativa válida.')

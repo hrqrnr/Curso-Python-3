@@ -1,0 +1,14 @@
+#lê o cateto oposto, o adjacente e mostra a hipotenusa
+
+#####IMPORTANTE NOTAR Q HÁ FUNÇÃO PARA QUASE TUDO. NO PYTHON, QUANDO HOUVER ALGO NOVO A SE FAZER É PRECISO SE PERGUNTAR SEMPRE: SERÁ Q EXSITE FUNÇÃO PARA ISSO? Dificilmente a resposta será negativa (generalista, sei)
+
+#a partir daq vou colocar quebra de linha em todos os exs, simplesmente p/ me habituar - idem p/ as casas decimais
+
+from math import hypot
+
+co = float(input('Cateto oposto: \n'))
+ca = float(input('Cateto adjacente: \n'))
+
+hi = hypot(co, ca) #note q são 2 parâmetros, justamente o CATETO OPOSTO e o CATETO ADJACENTE
+
+print('Hipotenusa: {:.2f}'.format(hi))

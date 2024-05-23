@@ -1,0 +1,14 @@
+#avalia um jovem no tocante ao alistamente militar c/ base em sua idade
+
+from datetime import datetime
+
+nasc = int(input('Ano de nascimento: \n'))
+atual = datetime.now().year
+idade = (atual - nasc)
+
+if idade < 18:
+    print('O jovem em questão deverá se alistar em {}.'.format((nasc + 18)))
+elif idade > 18:
+    print('O jovem deveria ter se alistado em {}.'.format((nasc + 18)))
+else:
+    print('Este é justamente o ano exato de se fazer o alistamento!')

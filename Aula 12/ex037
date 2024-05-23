@@ -1,0 +1,27 @@
+#conversor entre binário, octal e hexadecimal
+
+num = int(input('Nº a ser convertido: \n'))
+
+print('')
+
+base = int(input('''Escolha a base de conversão:
+                 
+Binário: 1
+Octal: 2
+Hexadecimal: 3
+
+Sua escolha: \n'''))
+
+print('')
+
+if base == 1:
+    print('Você escolheu binário.')
+    print('{} convertido para BINÁRIO é: {}.'.format(num, bin(num)[2:]))
+elif base == 2:
+    print('Você escolheu octal.')
+    print('{} convertido para OCTAL é: {}.'.format(num, oct(num)[2:]))
+elif base == 3:
+    print('Você escolheu hexadecimal.')
+    print('{} convertido para HEXADECIMAL é: {}.'.format(num, hex(num)[2:]))
+else:
+    print('Por favor, escolha apenas uma das 3 opções.')

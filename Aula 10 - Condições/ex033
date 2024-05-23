@@ -1,0 +1,21 @@
+#menor e o maior nº entre 3 digitados
+
+a = int(input('Primeiro nº: '))
+b = int(input('Segundo nº: '))
+c = int(input('Terceiro nº: '))
+
+menor = a
+maior = a
+
+if b < a and b < c:
+    menor = b
+if c < a and c < c:
+    menor = c
+
+if b > a and b > c:
+    maior = b
+if c > a and c > b:
+    maior = c
+
+print('Menor: {}'.format(menor))
+print('Maior: {}'.format(maior))

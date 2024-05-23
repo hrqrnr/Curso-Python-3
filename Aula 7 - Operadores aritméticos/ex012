@@ -1,0 +1,5 @@
+#preço de um prod. c/ 5% de desconto
+
+preço = float(input('Digite o preço de um produto: \nR$ ')) #o '\n' é usado para quebra de linha, isto é, pula uma linha e passa a escrever na de baixo somente com esse comando
+desconto = preço*5/100
+print('Preço c/ desconto: R$ {:.2f}'.format(preço - desconto))

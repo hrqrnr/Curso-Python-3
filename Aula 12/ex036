@@ -1,0 +1,20 @@
+#nd mt avançado aq. simplesmente uma condição dentro da outra. simples
+
+#avaliação de um empréstimo c/ base:
+                                    #no valor da casa
+                                    #salário do comprador
+                                    #quantidade de anos p/ pagar
+
+preço = float(input('Valor da casa:\nR$ '))
+sal = float(input('Salário:\nR$ '))
+tempo = int(input('Quantidade de anos p/ pagar: \n'))
+
+mensalidade = (preço / (tempo * 12))
+print('Valor da prestação: \nR$ {:.2f}'.format(mensalidade))
+
+if mensalidade >= (sal * 30 / 100):
+    print('Sinto muito. Seu empréstimo foi negado.')
+else:
+    print('Parabéns! Empréstimo concedido.')
+
+    

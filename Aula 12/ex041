@@ -1,0 +1,20 @@
+#categoria de um atleta na natação
+
+from datetime import date
+
+atual = date.today().year
+nasc = int(input('Ano de nascimento do(a) nadador(a): \n'))
+idade = atual - nasc
+
+print('Idade do atleta: {}'.format(idade))
+
+if idade <= 9:
+    print('Categoria: Mirim')
+elif idade <= 14:
+    print('Categoria: Infantil')
+elif idade <= 19:
+    print('Categoria: Júnior')
+elif idade <= 25:
+    print('Categoria: Sênior')
+else:
+    print('Categoria: Master')

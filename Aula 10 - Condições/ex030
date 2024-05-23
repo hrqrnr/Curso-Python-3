@@ -1,0 +1,8 @@
+#impopar
+
+n = int(input('Nº: '))
+
+if n % 2 == 0:
+    print('PAR')
+else:
+    print('ÍMPAR')

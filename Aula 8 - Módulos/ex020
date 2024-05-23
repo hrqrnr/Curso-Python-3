@@ -1,0 +1,14 @@
+#sorteia a ordem de 4 nomes
+
+from random import shuffle
+
+n1 = str(input('Primeiro: '))
+n2 = str(input('Segundo: '))
+n3 = str(input('Terceiro: '))
+n4 = str(input('Quarto: '))
+
+lista = [n1, n2, n3, n4]
+shuffle(lista)
+#aq se embaralha a lista dentro da execução do progr
+
+print('Ordem: {}'.format(lista))

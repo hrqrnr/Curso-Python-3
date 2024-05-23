@@ -1,0 +1,5 @@
+#lê um nº e mostra o antecessor e o sucessor
+
+n = int(input('Digite um nº: '))
+print('Antecessor: ', n-1)
+print('Antecessor: ', n+1)

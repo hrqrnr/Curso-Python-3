@@ -1,0 +1,16 @@
+#sobre condições nd especial a declarar. os comandos são basicamente os msms do portugol. #fé!
+
+#emula um jogo em q o usuário arrisca um nº p/ tentar bater com o escolhido pelo pc
+
+from random import randint
+from time import sleep
+pc = randint(0, 5)
+
+n = int(input('Digite um nº entre 0 e 5: '))
+print('Processando...')
+sleep(1)
+
+if n == pc:
+    print('Parabéns, vc acertou!')
+else:
+    print('Sinto mt, vc errou! O nº correto era o {}.'.format(pc))

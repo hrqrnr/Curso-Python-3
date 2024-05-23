@@ -1,0 +1,5 @@
+#avalia se tem "Silva" no nome
+
+nome = str(input('Nome: \n')).strip().lower()
+print('silva' in nome)
+#similarmente ao exercício passado, lembre-se q o "in" é na vdd um operador lógico

@@ -1,0 +1,15 @@
+##### A aula/matéria em questão me parece uma das mais importantes em Python. De acordo com oq acompanhei até aq, extraído da internet de forma geral, é oq a faz forte. Eu ousaria dizer q é "oq faz o Python". Existe biblioteca para tudo: jogos, web, análise de dados, enfim...
+#São funções pré-prontas, seja da própria linguagem, criada por usuários, bem como pelo próprio coder.
+#A documentação oficial diz mt, tanto q foi oq apareceu como primeira opção do Google.
+#Por volta do min 25 da aula, o Guanabara ensina como ver os q já estão instalados na máquina: File > Preferences > Editor > Project > Interpreter
+#Se dá por meio do famoso "import"
+
+#mostra a porção inteira de um nº
+
+from math import trunc
+
+n = float(input('Digite um número real: '))
+print('O valor digitado é {} e a sua porção inteira é {}.'.format(n, trunc(n)))
+
+#é possível fzr tbm a partir de uma função (método?) interna
+print('O valor digitado é {} e a sua porção inteira é {}.'.format(n, int(n)))

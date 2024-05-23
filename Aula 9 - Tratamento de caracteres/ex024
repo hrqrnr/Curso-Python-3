@@ -1,0 +1,8 @@
+#diz se o nome da cidade começa ou ñ com "santo"
+
+cid = input('Cidade: \n').lower().strip()
+#o lower vem pra padronizar a resposta em minúsculo; o strip pra cumprir a função dele já comentada em exs anteriores
+
+print(cid[:5] == 'santo')
+#aq rola algo bastante interessante: o dois símbolos de igual são usados como operador condicional, com retorno booleano
+#o print começa pegando a variável "cid" e usando nela um parâmetro - início, q é os dois pontos sem nada antes (se fosse até o final seria sem nada dps dos dois pontos); seria basicamente um 0. e indo até um 5 (IMPORTANTE DMS PERCEBER E LEMBRAR Q EM PYTHON, COMO JÁ DITO ANTERIORMENTE EM OUTRO EXS, COMEÇA-SE A CONTAGEM PELO 0 E O  ÚLTIMO Nº INSERIDO Ñ CONTA, isto é, a contagem no caso se dá de 0 a 5, então são 5 letras, 0, 1, 2, 3, 4)

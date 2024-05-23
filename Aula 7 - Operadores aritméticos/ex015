@@ -1,0 +1,6 @@
+#calcula o preço a se pagar pelo aluguel de um carro, baseado na quantidade de dias alugados (R$ 60,00) e kms rodados (R$ 0,15)
+
+dias = int(input('Dias alugado: '))
+km = float(input('Kms rodados: '))
+aluguel = (dias*60)+(km*0.15)
+print('Valor do aluguel: R$ {:.2f}'.format(aluguel))
